@@ -1,83 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0">
-    <title>Always In My Heart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-        .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.photo-item img {
-  width: 100%;        /* full width of the container */
-  height: auto;       /* full height without cropping */
-  object-fit: contain; /* show entire image inside the box */
-}
-
-.photo-item {
-  height: auto;       /* let container adjust to image height */
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.photo-caption {
-  text-align: center;
-  margin-top: 5px;
-  font-size: 0.9rem;
-  color: #555;
-}
-        body {
-            background-color: #fff5f5;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-<body>
-  <h1>Our Memories</h1>
-  
-  <!-- Photo gallery is here -->
-  <div class="photo-grid">
-    <!-- Photo items go here -->
-  </div>
-  
-  <!-- Video goes BELOW the photos -->
-  <h2>Our Song: Always 🎶</h2>
-  <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/pKFd12id5oQ" 
-      title="Daniel Caesar - Always (Official Audio)" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-  </div>
-<style>
-  /* This makes the text scale down on phones */
+    <style>   /* This makes the text scale down on phones */
   h1 {
     font-size: 2rem !important; 
     text-align: center;
@@ -154,207 +78,19 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
+    }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Always In My Heart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
-        h2 i {
-            margin-right: 15px;
-        }
-
-        /* Love Letter Styles */
-        .letter-container {
-            background-color: #fffafa;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: inset 0 0 10px rgba(255, 77, 77, 0.1);
-            position: relative;
-            margin-top: 20px;
-        }
-
-        .letter-container::before {
-            content: "💌";
-            position: absolute;
-            top: -15px;
-            left: -15px;
-            font-size: 2rem;
-            background-color: white;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .letter-content {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .letter-signature {
-            text-align: right;
-            font-style: italic;
-            font-size: 1.3rem;
-            color: #ff4d4d;
-            margin-top: 30px;
-            font-weight: 600;
-        }
-
-        /* Song Dedication Styles */
-        .song-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            align-items: center;
-        }
-
-        .song-info {
-            flex: 1;
-            min-width: 300px;
-        }
-
-        .song-cover {
-            width: 100%;
-            max-width: 300px;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .song-title {
-            font-size: 1.8rem;
-            color: #ff4d4d;
-            margin-bottom: 10px;
-        }
-
-        .song-artist {
-            font-size: 1.3rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .song-lyrics {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #ff9999;
-            padding-left: 15px;
-            margin: 20px 0;
-        }
-
-        /* Photo Gallery Styles */
-        .photo-grid { 
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .photo-item {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            height: 250px;
-            position: relative;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .photo-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-        }
-
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom right, #ff9999, #ff4d4d);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 4rem;
-        }
-
-        .photo-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 0.9rem;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #ff4d4d;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
-        }
-
-        .footer-heart {
-            color: #ffcccc;
-            font-size: 1.5rem;
-            margin: 0 5px;
-        }
-
-        .footer-note {
-            max-width: 600px;
-            margin: 20px auto;
-            font-style: italic;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-            }
-            
-            .content-section {
-                padding: 20px;
-            }
-            
-            .photo-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 10px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #ffe6e6;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #ff9999;
-            border-radius: 5px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ff4d4d;
-        }
-    </style> .photo-item img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.photo-item {
-  height: auto;
-}
-    .video-container {
+.video-container {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
@@ -369,9 +105,59 @@
   width: 100%;
   height: 100%;
 }
-</head>
+        .photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.photo-item img {
+  width: 100%;        /* full width of the container */
+  height: auto;       /* full height without cropping */
+  object-fit: contain; /* show entire image inside the box */
+}
+
+.photo-item {
+  height: auto;       /* let container adjust to image height */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.photo-caption {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #555;
+}
+        body {
+            background-color: #fff5f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 <body>
-    <header>
+  <h1>Our Memories</h1>
+  
+  <!-- Photo gallery is here -->
+  <div class="photo-grid">
+    <!-- Photo items go here -->
+  </div>
+  
+  <!-- Video goes BELOW the photos -->
+  <h2>Our Song: Always 🎶</h2>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/pKFd12id5oQ" 
+      title="Daniel Caesar - Always (Official Audio)" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+<style>
+  
+        
+
         <div class="container">
             <h1>Always In My Heart</h1>
             <div class="heart-divider">♥</div>
@@ -379,38 +165,38 @@
         </div>
     </header>
 
-    <main class="container">
-        <!-- Love Letter Section -->
-        <section class="content-section">
-            <h2><i class="fas fa-heart"></i> My Love Letter</h2>
-            <div class="letter-container">
-                <div class="letter-content">
-                    <p>hey kirikaa</p>
-                    <p>I'm writing this with a heart full of love and gratitude for the time we shared. Even though we're no longer together, I want you to know that what we had was real, beautiful, and something I will always cherish.</p>
-                    <p>Remember our late-night conversations that lasted until sunrise? Or that rainy day we spent kissing and getting wet? Those moments are etched in my memory forever. You taught me so much about love, patience, and understanding.</p>
-                    <p>I'm grateful that we parted on good terms, with respect and kindness for each other. That says so much about the connection we shared. While it's painful to not have you in my daily life anymore, I find comfort knowing you're out there pursuing your dreams.</p>
-                    <p>I don't know what the future holds for either of us, but I sincerely hope you find all the happiness you deserve. You have a beautiful soul, and the world is brighter with you in it.</p>
-                    <p>This isn't a goodbye to what we had, but a thank you for what we shared. You'll always have a special place in my heart.</p>
-                </p> babyyy I've loved you ,will love you still and always adore you </p>
-                    <div class="letter-signature">
-                        Forever yours RITAAA.,<br>
-                        With love always
-                    </div>
-                </div>
-            </div>
-        </section>
+    <main <main=class="cont>
+        <!    <!-  Love  etter S ct>
+        <     <s ction=class="content-se>
+            <  ><  h2><i=class="fas fa-></r> >< i> M  Love </tt>
+            <     <div=class="letter-cont>
+                <     <div=class="letter-co>
+                    < >    p>hey k</i>
+                    < >   <p>I'm writing this with a heart full of love and gratitude for the time we shared. Even though we re no  onger to, t er,   wa t  ou t  kno  tha  w at  e h d wa, real, bea, ifu , and som t ing   will  lways c.</i>
+                    < >   <p>Re emb r our late night convers tion  that  asted until s? ri e? O  that rai y  ay we spent k ssi g and g tti?  wet? Those m men s are  tc ed in my  emory f. eve . You  au ht me s  much abou, love, pa, enc , and underst.</i>
+                    < >   <p>I'm grateful that we parted on good terms, with respect and kindness for each other. That says so much about the connection we shared. Whil  it's p in ul  o no  ha e  ou in my dail  life a, m re,   find c mfort k owi'g  ou' e out there pu suin  your .</a>
+                    < >   <p'I don'  kno  wh t the  uture hol s for  it er, f u , but I sin erel  ho e yo  fi d a l the hap ine s you d. erv . Yo   ave a bea tifu, sou , a d the wo ld is br ghte  wi h  ou.</ >
+                    < >   < >This isn't a goodbye to what we had, but a thank you for what we shared.  ou'll  lway   ave a s ecial pl ce in my.</a>
+                </ >  </p>  a'yy  I've lov , you ,wil  lo e you sti l and  lways ado </y>
+                    <     <div=class="letter-sign>
+                              F rever yours .,<AA>
+                              Wit  love 
+                    </   >
+                </   >
+            </   >
+        </    </s>
 
-        <!-- Song Dedication Section -->
-        <section class="content-section">
-            <h2><i class="fas fa-music"></i> Song Dedication</h2>
-            <div class="song-section">
-                <div class="song-info">
-                    <h3 class="song-title">Always</h3>
-                    <p class="song-artist">by Daniel Caesar</p>
-                    <p>This song perfectly captures how I feel about you. Even though we're not together anymore, a part of me will always love you. The lyrics speak to the eternal nature of true connection.</p>
+        <!    <!-  Song Dedi ation S ct>
+        <     <s ction=class="content-se>
+            <  ><  h2><i=class="fas fa-></i> ></i  Song Dedi</ti>
+            <     <div=class="song-se>
+                <     <div=class="song>
+                    <     <h3=class="song->itle"></wa>
+                    <     <p=class="song-a>ti t">by  aniel </e>
+                    < >   < >Thi  song per ectly ca tur s how   feel abo.  you  Even  ho'gh we' e not to ether a, m re,   p rt of m  will  lway  lo.  yo . The  yrics sp ak  o the e ernal  at re o  true conn.</i>
                     
-                    <div class="song-lyrics">
-                        "I will always love the way you dance<br>
+                    <     <div=class="song-l>
+                        "     "  will  lway  lo e t e w y you<da>
                         I will always love the way you smile<br>
                         I will always love the way you look at me"
                     </div>
