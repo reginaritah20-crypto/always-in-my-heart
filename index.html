@@ -76,13 +76,32 @@
       allowfullscreen>
     </iframe>
   </div>
-</body>
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+<style>
+  /* This makes the text scale down on phones */
+  h1 {
+    font-size: 2rem !important; 
+    text-align: center;
+  }
 
+  .subtitle {
+    font-size: 1.1rem !important;
+  }
+
+  /* This stops the "squashed" look from your photo */
+  .container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  /* Add this to handle small screens specifically */
+  @media (max-width: 600px) {
+    h1 { font-size: 1.5rem !important; }
+    header { padding: 20px 10px !important; }
+  }
+</style>
+
+        
         /* Header Styles */
         header {
             background: linear-gradient(to right, #ff4d4d, #ff9999);
