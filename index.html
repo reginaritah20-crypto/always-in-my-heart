@@ -12,14 +12,46 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
 
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
         body {
             background-color: #fff5f5;
             color: #333;
             line-height: 1.6;
             overflow-x: hidden;
         }
-
+<body>
+  <h1>Our Memories</h1>
+  
+  <!-- Photo gallery is here -->
+  <div class="photo-grid">
+    <!-- Photo items go here -->
+  </div>
+  
+  <!-- Video goes BELOW the photos -->
+  <h2>Our Song: Always 🎶</h2>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/pKFd12id5oQ" 
+      title="Daniel Caesar - Always (Official Audio)" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
         .container {
             max-width: 1200px;
             margin: 0 auto;
