@@ -28,7 +28,19 @@
             margin: 0 auto;
             padding: 20px;
         }
-        
+        .photo-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
         header {
             text-align: center;
             margin-bottom: 40px;
@@ -83,35 +95,7 @@
             text-align: right;
         }
         
-        .photo-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 40px;
-        }
         
-        .photo-item {
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            height: 300px;
-            position: relative;
-        }
-        
-        .photo-item:hover {
-            transform: translateY(-5px);
-        }
-        
-        .photo-placeholder {
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, #ffd6e7, #c9f5ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
         }
         
         .photo-label {
@@ -208,52 +192,31 @@
                     <p>No matter where life takes us, please remember this: you are loved more than words could ever express. You are cherished, appreciated, and deeply cared for—today, tomorrow, and always.</p>
                 </div>
                 
-                <span class="letter-end">From Ritaa</span>
-            </section>
-            
-            <section class="photo-gallery">
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        📸 Our Special Moments
-                    </div>
-                    <div class="photo-label">IMG_20250210_160815_120.jpg</div>
-                </div>
-                
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        💕 Memories Together
-                    </div>
-                    <div class="photo-label">IMG_20251228_168623_318.jpg</div>
-                </div>
-                
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        🌟 Cherished Times
-                    </div>
-                    <div class="photo-label">IMG_20251228_168628_159.jpg</div>
-                </div>
-                
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        ✨ Love Captured
-                    </div>
-                    <div class="photo-label">IMG_20251228_168646_352.jpg</div>
-                </div>
-                
-                <div class="photo-item">
-                    <div class="photo-placeholder">
-                        💖 Precious Memories
-                    </div>
-                    <div class="photo-label">IMG_20251228_168657_085.jpg</div>
-                </div>
-            </section>
-        </main>
-        
-        <footer>
-            <p>Made with <span class="heart">❤️</span> by Ritaa | Always in My Heart</p>
-            <p>© 2025 | A digital expression of love</p>
-        </footer>
-    </div>
+                <span class="letter-ends">from Ritaa </span>
+            </div>
+                <section class="photo-gallery">
+
+  <div class="photo-item">
+    <img src="IMG_20250210_160815_120.jpg">
+  </div>
+
+  <div class="photo-item">
+    <img src="IMG_20251228_168623_318.jpg">
+  </div>
+
+  <div class="photo-item">
+    <img src="IMG_20251228_168628_159.jpg">
+  </div>
+
+  <div class="photo-item">
+    <img src="IMG_20251228_168646_352.jpg">
+  </div>
+
+  <div class="photo-item">
+    <img src="IMG_20251228_168657_085.jpg">
+  </div>
+
+                </section>
 
     <script>
         // Add some interactive effects
